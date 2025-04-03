@@ -2,7 +2,7 @@ name: cicd for React App
 on:
   push:
     branches: [main]
-  workflow_dispatch::
+  workflow_dispatch: 
 
 permissions:
   contents: write
@@ -11,7 +11,7 @@ jobs:
   build_and_deploy:
       runs-on: ubuntu-latest
 
-    steps:
+      steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
